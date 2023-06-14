@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html>
+<title>VR</title>
+<head>
+    <meta charset="utf-8">
+   <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+<script src="https://unpkg.com/aframe-spe-particles-component@^1.0.4/dist/aframe-spe-particles-component.min.js"></script>
+</head>
+<body>
+  <a-scene background="color: #000000">
+
+        <!--Camera-->
+        
+<a-scene id="a-scene">
+<a-entity position="-25 10 0"spe-particles="
+color:yellow,red,cyan,black;
+distribution:sphere; 
+randomize-velocity: true;
+radius:5;
+particle-count:800;
+velocity:5;
+velocity-spread:15;
+drag:1;
+max-age:2
+duration:-1;
+blending:addictive;
+active-multiplier: 1000;
+size:3,1,1,1"></a-entity>
+
+<a-entity position="4 -3 0"spe-particles="
+color:yellow,red,cyan,black;
+distribution:sphere; 
+randomize-velocity: true;
+radius:5;
+particle-count:800;
+velocity:5;
+velocity-spread:15;
+drag:1;
+max-age:2
+duration:-1;
+blending:addictive;
+active-multiplier: 1000;
+size:3,1,1,1"></a-entity>
+
+<a-entity position="30 10 0"spe-particles="
+color:yellow,red,cyan,black;
+distribution:sphere; 
+randomize-velocity: true;
+radius:5;
+particle-count:800;
+velocity:5;
+velocity-spread:20;
+drag:1;
+max-age:2
+duration:-1;
+blending:addictive;
+active-multiplier: 1000;
+size:3,1,1,0"></a-entity>
+<a-camera   position="0 0 40"></a-camera>
+
+</a-entity>
+</a-scene>
+</body>
+</html>
